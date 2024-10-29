@@ -7,7 +7,7 @@ import ImageContentBlock from './components/ImageContentBlock.tsx';
 
 const App = () => {
     return (
-        <>
+        <div className={'flex flex-col gap-8'}>
             <Header />
             <ImageContentBlock imageAlt={'tapwagen'} imagePath={'./img/tapwagen/1.jpeg'} title={'TM - Rents'}>
                 <p>
@@ -54,7 +54,7 @@ const App = () => {
                 </p>
             </ImageContentBlock>
             <Footer />
-        </>
+        </div>
     );
 };
 

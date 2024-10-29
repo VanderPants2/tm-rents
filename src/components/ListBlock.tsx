@@ -8,7 +8,7 @@ type Props = {
 
 const ListBlock = ({children, title}: Props) => {
     return (
-        <div className={'flex justify-center py-16 px-8 bg-black text-teal-600'}>
+        <div className={'flex justify-center py-16 px-4 bg-black text-teal-600'}>
             <div className={'flex items-center max-w-[900px]'}>
                 <div className={'p-8 basis-1/3'}>
                     <div className={'font-bold text-6xl uppercase'}>{title}</div>
