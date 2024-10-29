@@ -10,25 +10,26 @@ const PartyBus = () => {
             <Header />
             <ImageContentBlock imageAlt={'partybus'} imagePath={'./img/partybus/12.jpeg'} title={'Partybus'}>
                 <p>
-                    Maak je volgende evenement legendarisch met de Baravan, onze unieke en volledig uitgeruste mobiele tapwagen!
-                    Perfect voor elke gelegenheid, van epische bruiloften en onvergetelijke verjaardagen tot bruisende
-                    bedrijfsfeesten en knallende festivals.
+                    Maak van je vervoersopties een feest op zich! Onze partybus is ideaal voor verjaardagen, vrijgezellenfeesten
+                    of een dagje uit met vrienden.
                 </p>
-                <p className={'pt-4'}>Waarom de Baravan?</p>
+                <p className={'pt-4'}>Waarom onze partybus?</p>
                 <ul className={'list-disc list-inside'}>
                     <div className={'indent-3'}>
-                        <li>Professioneel en uniek bar concept 🍻</li>
-                        <li>Volledig uitgerust met tapinstallatie en koeling ❄️</li>
-                        <li>Flexibel en geschikt voor elke locatie 🌍</li>
-                        <li>🎉 Beleef de Plezier!</li>
+                        <li>Ruime en comfortabele bus 🚌</li>
+                        <li>Genoeg plaats om een hele rit te dansen 💃</li>
+                        <li>Uitgerust met genoeg frigo ruimte ❄️</li>
+                        <li>Krachtige speakers, zodat je kunt dansen op je favoriete muziek. 🎶</li>
+                        <li>🎉 Maak onvergetelijke herinneringen met vrienden en familie</li>
                     </div>
                 </ul>
-                <p className={'pt-4'}>
-                    Gasten genieten van perfect getapte drankjes 🍹 Creëer een gezellige sfeer met een stijlvolle barambiance ✨
-                    Maak onvergetelijke herinneringen met vrienden en familie ❤️ Reserveer de Baravan vandaag nog en voeg een
-                    vleugje magie en gemak toe aan je evenement! 🥳🍻
-                </p>
             </ImageContentBlock>
+            <ImageContentBlock
+                imageAlt={'partybus'}
+                imagePath={'./img/tibo_en_rudy.jpeg'}
+                reverse
+                title={'Buschauffeur inbegrepen'}
+            />
             <ImageList
                 imageList={[
                     {path: './img/partybus/1.jpeg', alt: ''},

@@ -4,19 +4,21 @@ import ListItem from './ListItem.tsx';
 type Props = {
     title: string;
     children: ReactNode;
+    imagePath: string;
+    imageAlt: string;
 };
 
-const ListBlock = ({children, title}: Props) => {
+const ImageListBlock = ({children, imageAlt, imagePath, title}: Props) => {
     return (
-        <div className={'flex justify-center py-16 px-4 bg-black text-teal-600'}>
+        <div className={'flex justify-center'}>
             <div className={'flex items-center max-w-[900px] flex-col sm:flex-row'}>
-                <div className={'sm:px-8 sm:pb-0 pb-12 px-4 basis-1/3'}>
-                    <div className={'font-bold sm:text-6xl text-4xl uppercase'}>{title}</div>
-                </div>
                 <ul className={'basis-2/3 flex flex-col gap-4'}>{children}</ul>
+                <div className={'p-8 basis-1/3'}>
+                    <img alt={imageAlt} className={'rounded-xl'} src={imagePath} />
+                </div>
             </div>
         </div>
     );
 };
 
-export default ListBlock;
+export default ImageListBlock;
