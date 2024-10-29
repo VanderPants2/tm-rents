@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client'
 import './tailwind.scss'
 import App from './App.tsx'
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom";
+import './i18n.ts';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
             <Route
-            element={<App/>}
-            path={'/'}/>
+                element={<App/>}
+                path={'/'}/>
         </>,
     ),
 );

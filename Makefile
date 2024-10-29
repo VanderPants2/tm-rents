@@ -1,5 +1,17 @@
 dev:
-	pnpm run dev --host
+	pnpm run dev
 
-install i:
+install:
 	pnpm install
+
+i:
+	pnpm install
+
+build:
+	pnpm build
+
+lint:
+	pnpm lint
+
+lint-fix:
+	pnpm lint-fix

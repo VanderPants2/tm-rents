@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": [
+        "react",
+        "prettier",
+        "@typescript-eslint",
+        "sort-destructure-keys"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "typescript": true
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 130,
+                "tabWidth": 4,
+                "singleQuote": true,
+                "bracketSpacing": false
+            }
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error"
+        ],
+        "react/jsx-sort-props": "error",
+        "sort-destructure-keys/sort-destructure-keys": "error"
+    }
+}
