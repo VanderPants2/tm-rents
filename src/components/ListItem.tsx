@@ -8,8 +8,8 @@ type Props = {
 
 const ListItem = ({children, icon, title}: Props) => {
     return (
-        <div className={'flex'}>
-            <div className={'text-4xl py-2 px-4'}>{icon}</div>
+        <div className={'flex items-center'}>
+            <div className={'text-4xl text-center mr-6 w-[70px]'}>{icon}</div>
             <div>
                 <div className={'text-lg font-semibold'}>{title}</div>
                 {children}
