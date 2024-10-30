@@ -10,7 +10,7 @@ const Header = () => {
                 <div className={'flex flex-col items-center w-full mr-[-15px]'}>
                     <Link to={'/'}>
                         <div className={'text-2xl uppercase font-bold'}>
-                            <span className={'text-teal-600'}>TM</span> - Rents
+                            <span className={'text-teal-600'}>TM</span> - Events
                         </div>
                     </Link>
                     <div className={'grid grid-cols-3 items-center w-full'}>

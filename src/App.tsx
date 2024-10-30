@@ -9,9 +9,9 @@ const App = () => {
     return (
         <div className={'flex flex-col gap-8'}>
             <Header />
-            <ImageContentBlock imageAlt={'tapwagen'} imagePath={'./img/tapwagen/1.jpeg'} title={'TM - Rents'}>
+            <ImageContentBlock imageAlt={'tapwagen'} imagePath={'./img/tapwagen/1.jpeg'} title={'TM - Events'}>
                 <p>
-                    TM - Rents is dé specialist in feestverhuur. Of je nu een kinderfeestje, een vrijgezellenfeest of een
+                    TM - Events is dé specialist in feestverhuur. Of je nu een kinderfeestje, een vrijgezellenfeest of een
                     bedrijfsfeest organiseert, wij hebben alles om jouw event onvergetelijk te maken. Van kleurrijke
                     springkastelen tot een feestelijke partybus en onze unieke Baravan: bij ons vind je het allemaal.
                 </p>

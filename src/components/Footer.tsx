@@ -8,7 +8,7 @@ const Footer = () => {
             <div className={'sm:flex justify-evenly items-center w-full'}>
                 <div>
                     <div className={'text-center text-2xl uppercase font-bold'}>
-                        <span className={'text-teal-600'}>TM</span> - Rents
+                        <span className={'text-teal-600'}>TM</span> - Events
                     </div>
                     <div className={'text-center font-light'}>Verhuur voor evenementen</div>
                 </div>
