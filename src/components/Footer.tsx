@@ -7,8 +7,8 @@ const Footer = () => {
         <footer className={'bg-black p-8 text-white'}>
             <div className={'sm:flex justify-evenly items-center w-full'}>
                 <div>
-                    <div className={'text-center text-2xl uppercase font-bold'}>
-                        <span className={'text-teal-600'}>TM</span> - Events
+                    <div className={'text-center text-2xl uppercase font-bold select-none'}>
+                        <span className={'text-primary'}>TM</span> - Events
                     </div>
                     <div className={'text-center font-light'}>Verhuur voor evenementen</div>
                 </div>
@@ -17,16 +17,16 @@ const Footer = () => {
                         <a href={'tel:+32470824801'}>
                             <div
                                 className={
-                                    'px-6 py-3 bg-white text-teal-600 rounded-full font-semibold transition-all hover:text-white hover:bg-teal-600 w-max'
+                                    'px-6 py-3 bg-background text-primary rounded-full font-semibold transition-all hover:text-white hover:bg-primary w-max select-none'
                                 }
                             >
                                 <i className="fa-solid fa-phone"></i> 0470/82.48.01
                             </div>
                         </a>
                     </div>
-                    <div className={'text-center text-2xl'}>
+                    <div className={'text-center text-2xl select-none'}>
                         <a
-                            className={'transition-all hover:text-teal-600'}
+                            className={'transition-all hover:text-primary'}
                             href={'https://www.instagram.com/tm_rents/'}
                             target={'_blank'}
                         >

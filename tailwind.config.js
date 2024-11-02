@@ -8,6 +8,13 @@ export default {
             fontFamily: {
                 roboto: ['Roboto'],
             },
+            colors: {
+                black: '#030b09',
+                background: '#f8fdfb',
+                primary: '#00aa80',
+                secondary: '#99d8c8',
+                accent: '#AA0080',
+            },
         },
     },
 };

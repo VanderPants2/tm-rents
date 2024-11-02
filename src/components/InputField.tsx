@@ -16,7 +16,7 @@ const InputField = ({children, description, disabled, name, placeholder, require
             </label>
             <input
                 className={
-                    'disabled:opacity-70 border-2 rounded-md border-teal-600/40 hover:border-teal-600/70 focus:outline-none focus:border-teal-600 placeholder:italic placeholder:text-slate-400 w-full py-3 px-4'
+                    'disabled:opacity-70 border-2 rounded-md border-primary/40 hover:border-primary/70 focus:outline-none focus:border-primary placeholder:italic placeholder:text-slate-400 w-full py-3 px-4'
                 }
                 disabled={disabled}
                 name={name}

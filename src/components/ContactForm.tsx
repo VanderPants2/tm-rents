@@ -17,7 +17,7 @@ const ContactForm = () => {
     return (
         <form action="https://formspree.io/f/xnnqpjaq" id={'contactForm'} method="POST" onSubmit={handleSubmit}>
             {state.succeeded ? (
-                <div className={'bg-teal-600/40 rounded-md mb-4 px-3 py-2'}>
+                <div className={'bg-primary/40 rounded-md mb-4 px-3 py-2'}>
                     Uw vraag is verzonden en goed toegekomen. Wij nemen zo snel mogelijk contact met u op.
                 </div>
             ) : null}

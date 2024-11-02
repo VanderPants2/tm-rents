@@ -10,13 +10,13 @@ const NavItem = ({children, linkTo}: Props) => {
     return (
         <NavLink
             className={({isActive}) =>
-                'hover:opacity-80 border border-teal-600 rounded-2xl sm:border-none ' +
-                (isActive ? 'bg-teal-600 text-whit transition-all' : '')
+                'hover:opacity-80 border border-primary rounded-2xl sm:border-none ' +
+                (isActive ? 'bg-primary text-whit transition-all' : '')
             }
             end
             to={linkTo}
         >
-            <li className={'px-3 py-2'}>{children}</li>
+            <li className={'px-3 py-2 select-none'}>{children}</li>
         </NavLink>
     );
 };

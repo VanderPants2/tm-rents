@@ -9,14 +9,14 @@ const Header = () => {
             <div className={'flex sm:flex-col items-center justify-center h-full max-h-full'}>
                 <div className={'flex flex-col items-center w-full mr-[-15px]'}>
                     <Link to={'/'}>
-                        <div className={'text-2xl uppercase font-bold'}>
-                            <span className={'text-teal-600'}>TM</span> - Events
+                        <div className={'text-4xl uppercase font-bold select-none'}>
+                            <span className={'text-primary'}>TM</span> - Events
                         </div>
                     </Link>
                     <div className={'grid grid-cols-3 items-center w-full'}>
                         <div className={'text-center text-2xl hidden sm:block'}>
                             <a
-                                className={'transition-all hover:text-teal-600'}
+                                className={'transition-all hover:text-primary'}
                                 href={'https://www.instagram.com/tm_rents/'}
                                 target={'_blank'}
                             >
@@ -28,7 +28,7 @@ const Header = () => {
                             <a href={'tel:+32470824801'}>
                                 <div
                                     className={
-                                        'px-6 py-3 bg-white text-teal-600 rounded-full font-semibold transition-all hover:text-white hover:bg-teal-600'
+                                        'px-6 py-3 bg-background text-primary rounded-full font-semibold transition-all hover:text-white hover:bg-primary select-none'
                                     }
                                 >
                                     <i className="fa-solid fa-phone"></i> 0470/82.48.01

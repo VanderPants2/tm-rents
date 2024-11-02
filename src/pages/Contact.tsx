@@ -28,12 +28,12 @@ const Contact = () => {
                 blockRight={
                     <div className={'flex flex-col gap-4'}>
                         <img alt={'partybus'} className={'rounded-xl hidden sm:block'} src={'./img/partybus/12.jpeg'} />
-                        <a className={'transition-all hover:text-teal-600 w-max'} href={'tel:+32470824801'}>
+                        <a className={'transition-all hover:text-primary w-max'} href={'tel:+32470824801'}>
                             <ListItem icon={<i className="fa-solid fa-phone"></i>} title={'Telefoonnummer'}>
                                 0470/82.48.01
                             </ListItem>
                         </a>
-                        <a className={'transition-all hover:text-teal-600 w-max'} href={'mailto:tibo.mertens@hotmail.com'}>
+                        <a className={'transition-all hover:text-primary w-max'} href={'mailto:tibo.mertens@hotmail.com'}>
                             <ListItem icon={<i className="fa-solid fa-envelope"></i>} title={'E-mailadres'}>
                                 tibo.mertens@hotmail.com
                             </ListItem>
