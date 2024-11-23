@@ -17,16 +17,16 @@ const Tapwagen = () => {
                 <p className={'pt-4'}>Waarom de Baravan?</p>
                 <ul className={'list-disc list-inside'}>
                     <div className={'indent-3'}>
-                        <li>Professioneel en uniek bar concept 🍻</li>
-                        <li>Volledig uitgerust met tapinstallatie en koeling ❄️</li>
-                        <li>Flexibel en geschikt voor elke locatie 🌍</li>
-                        <li>🎉 Beleef de Plezier!</li>
+                        <li>Professioneel en uniek bar concept</li>
+                        <li>Volledig uitgerust met tapinstallatie en koeling</li>
+                        <li>Flexibel en geschikt voor elke locatie</li>
+                        <li>Beleef plezier!</li>
                     </div>
                 </ul>
                 <p className={'pt-4'}>
-                    Gasten genieten van perfect getapte drankjes 🍹 Creëer een gezellige sfeer met een stijlvolle barambiance ✨
-                    Maak onvergetelijke herinneringen met vrienden en familie ❤️ Reserveer de Baravan vandaag nog en voeg een
-                    vleugje magie en gemak toe aan je evenement! 🥳🍻
+                    Gasten genieten van perfect getapte drankjes, creëer een gezellige sfeer met een stijlvolle bar ambiance. Maak
+                    onvergetelijke herinneringen met vrienden en familie..️ Reserveer de Baravan vandaag nog en voeg een vleugje
+                    magie en gemak toe aan je evenement!
                 </p>
             </ImageContentBlock>
             <ImageList

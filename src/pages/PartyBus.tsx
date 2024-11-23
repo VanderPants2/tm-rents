@@ -16,11 +16,11 @@ const PartyBus = () => {
                 <p className={'pt-4'}>Waarom onze partybus?</p>
                 <ul className={'list-disc list-inside'}>
                     <div className={'indent-3'}>
-                        <li>Ruime en comfortabele bus 🚌</li>
-                        <li>Genoeg plaats om een hele rit te dansen 💃</li>
-                        <li>Uitgerust met genoeg frigo ruimte ❄️</li>
-                        <li>Krachtige speakers, zodat je kunt dansen op je favoriete muziek. 🎶</li>
-                        <li>🎉 Maak onvergetelijke herinneringen met vrienden en familie</li>
+                        <li>Ruime en comfortabele bus</li>
+                        <li>Genoeg plaats om een hele rit te dansen</li>
+                        <li>Uitgerust met genoeg frigo ruimte</li>
+                        <li>Krachtige speakers, zodat je kunt dansen op je favoriete muziek.</li>
+                        <li>Maak onvergetelijke herinneringen met vrienden en familie</li>
                     </div>
                 </ul>
             </ImageContentBlock>
