@@ -1,12 +1,12 @@
-import React, {ReactNode, useState} from 'react';
+import React, {ReactNode} from 'react';
 
 type Props = {
     children: ReactNode;
     type?: 'submit' | 'reset' | 'button' | undefined;
-    disabled: boolean;
+    disabled?: boolean;
 };
 
-const Button = ({children, disabled, type = undefined}: Props) => {
+const Button = ({children, disabled = false, type = undefined}: Props) => {
     return (
         <div>
             <button

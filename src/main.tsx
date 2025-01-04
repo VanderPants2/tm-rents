@@ -8,6 +8,7 @@ import PartyBus from './pages/PartyBus.tsx';
 import Springkastelen from './pages/Springkastelen.tsx';
 import Tapwagen from './pages/Tapwagen.tsx';
 import Contact from './pages/Contact.tsx';
+import Error404 from './pages/Error404.tsx';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
             <Route element={<Springkastelen />} path={'/springkastelen'} />
             <Route element={<Tapwagen />} path={'/tapwagen'} />
             <Route element={<Contact />} path={'/contact'} />
+            <Route element={<Error404 />} path={'*'} />
         </>,
     ),
 );
