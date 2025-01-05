@@ -33,9 +33,9 @@ const Contact = () => {
                                 0470/82.48.01
                             </ListItem>
                         </a>
-                        <a className={'transition-all hover:text-primary w-max'} href={'mailto:tibo.mertens@hotmail.com'}>
+                        <a className={'transition-all hover:text-primary w-max'} href={'mailto:info@tm-events-rents.be'}>
                             <ListItem icon={<i className="fa-solid fa-envelope"></i>} title={'E-mailadres'}>
-                                tibo.mertens@hotmail.com
+                                info@tm-events-rents.be
                             </ListItem>
                         </a>
                         <ListItem icon={<i className="fa-solid fa-building"></i>} title={'Ondernemingsnummer'}>
