@@ -28,7 +28,7 @@ const ImageList = ({imageList}: Props) => {
                         <div key={image.path}>
                             <img
                                 alt={image.alt}
-                                className={'aspect-square object-cover rounded-xl'}
+                                className={'aspect-square object-cover rounded-xl drop-shadow'}
                                 onClick={() => openImageViewer(index)}
                                 src={image.path}
                             />

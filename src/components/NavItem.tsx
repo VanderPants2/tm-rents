@@ -10,8 +10,7 @@ const NavItem = ({children, linkTo}: Props) => {
     return (
         <NavLink
             className={({isActive}) =>
-                'hover:opacity-80 border border-primary rounded-2xl sm:border-none ' +
-                (isActive ? 'bg-primary text-whit transition-all' : '')
+                'hover:opacity-80 border border-primary rounded-2xl ' + (isActive ? 'bg-primary text-whit transition-all' : '')
             }
             end
             to={linkTo}

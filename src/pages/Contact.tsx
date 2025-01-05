@@ -27,7 +27,11 @@ const Contact = () => {
             <SplitBlock
                 blockRight={
                     <div className={'flex flex-col gap-4'}>
-                        <img alt={'partybus'} className={'rounded-xl hidden sm:block'} src={'./img/partybus/12.jpeg'} />
+                        <img
+                            alt={'partybus'}
+                            className={'rounded-xl hidden sm:block drop-shadow'}
+                            src={'./img/partybus/12.jpeg'}
+                        />
                         <a className={'transition-all hover:text-primary w-max'} href={'tel:+32470824801'}>
                             <ListItem icon={<i className="fa-solid fa-phone"></i>} title={'Telefoonnummer'}>
                                 0470/82.48.01
