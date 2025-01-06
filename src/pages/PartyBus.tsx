@@ -3,6 +3,7 @@ import Header from '../components/Header.tsx';
 import ImageContentBlock from '../components/ImageContentBlock.tsx';
 import ImageList from '../components/ImageList.tsx';
 import Footer from '../components/Footer.tsx';
+import {Link} from 'react-router-dom';
 
 const PartyBus = () => {
     return (
@@ -23,6 +24,15 @@ const PartyBus = () => {
                         <li>Maak onvergetelijke herinneringen met vrienden en familie</li>
                     </div>
                 </ul>
+                <Link to={'/contact'}>
+                    <div
+                        className={
+                            'px-6 py-3 mt-8 bg-primary text-white rounded-xl font-semibold border border-primary drop-shadow transition-all hover:text-primary hover:bg-background w-max select-none'
+                        }
+                    >
+                        Neem contact op
+                    </div>
+                </Link>
             </ImageContentBlock>
             <ImageContentBlock
                 imageAlt={'partybus'}

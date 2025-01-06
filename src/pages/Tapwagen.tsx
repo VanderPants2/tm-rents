@@ -3,6 +3,7 @@ import Header from '../components/Header.tsx';
 import Footer from '../components/Footer.tsx';
 import ImageList from '../components/ImageList.tsx';
 import ImageContentBlock from '../components/ImageContentBlock.tsx';
+import {Link} from 'react-router-dom';
 
 const Tapwagen = () => {
     return (
@@ -28,6 +29,15 @@ const Tapwagen = () => {
                     onvergetelijke herinneringen met vrienden en familie..️ Reserveer de Baravan vandaag nog en voeg een vleugje
                     magie en gemak toe aan je evenement!
                 </p>
+                <Link to={'/contact'}>
+                    <div
+                        className={
+                            'px-6 py-3 mt-8 bg-primary text-white rounded-xl font-semibold border border-primary drop-shadow transition-all hover:text-primary hover:bg-background w-max select-none'
+                        }
+                    >
+                        Neem contact op
+                    </div>
+                </Link>
             </ImageContentBlock>
             <ImageList
                 imageList={[
