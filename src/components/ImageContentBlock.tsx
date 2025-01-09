@@ -16,7 +16,7 @@ const ImageContentBlock = ({children, imageAlt, imagePath, reverse, title}: Prop
                     <div className={'font-bold sm:text-6xl text-4xl uppercase'}>{title}</div>
                     <div>{children}</div>
                 </div>
-                <div className={'basis-1/3'}>
+                <div className={'basis-1/3 -z-10'}>
                     <img alt={imageAlt} className={'rounded-xl drop-shadow'} src={imagePath} />
                 </div>
             </div>
