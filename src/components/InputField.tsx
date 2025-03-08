@@ -10,7 +10,7 @@ type Props = {
 
 const InputField = ({children, description, disabled, name, placeholder, required, type = 'text'}: Props) => {
     return (
-        <div className={'flex flex-col gap-0.5 font-roboto mb-4'}>
+        <div className={'flex flex-col gap-0.5 font-roboto mb-4 w-full'}>
             <label className={'ml-1 font-medium'} htmlFor={name}>
                 {children} {required && <span className={'text-red-600'}>*</span>}
             </label>
