@@ -24,7 +24,7 @@ const PartyBus = () => {
                         <li>Maak onvergetelijke herinneringen met vrienden en familie</li>
                     </div>
                 </ul>
-                <Link to={'/contact'}>
+                <Link state={{subject: 'Partybus'}} to={'/contact'}>
                     <div
                         className={
                             'px-6 py-3 mt-8 bg-primary text-white rounded-xl font-semibold border border-primary drop-shadow transition-all hover:text-primary hover:bg-background w-max select-none'

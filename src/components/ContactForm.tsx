@@ -4,10 +4,12 @@ import InputField from './InputField.tsx';
 import TextArea from './TextArea.tsx';
 import Button from './Button.tsx';
 import Dropdown from './Dropdown.tsx';
+import {useLocation} from 'react-router-dom';
 
 const ContactForm = () => {
     const [state, handleSubmit] = useForm('xnnqpjaq');
-    const [subject, setSubject] = useState<string>('');
+    const {state: stateParams} = useLocation();
+    const [subject, setSubject] = useState<string>(stateParams?.subject ?? '');
 
     useEffect(() => {
         if (state.succeeded) {

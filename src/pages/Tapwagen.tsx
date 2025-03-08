@@ -29,7 +29,7 @@ const Tapwagen = () => {
                     onvergetelijke herinneringen met vrienden en familie..️ Reserveer de Baravan vandaag nog en voeg een vleugje
                     magie en gemak toe aan je evenement!
                 </p>
-                <Link to={'/contact'}>
+                <Link state={{subject: 'Tapwagen'}} to={'/contact'}>
                     <div
                         className={
                             'px-6 py-3 mt-8 bg-primary text-white rounded-xl font-semibold border border-primary drop-shadow transition-all hover:text-primary hover:bg-background w-max select-none'
