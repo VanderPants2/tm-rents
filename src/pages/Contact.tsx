@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import Header from '../components/Header.tsx';
 import Footer from '../components/Footer.tsx';
 import SplitBlock from '../components/SplitBlock.tsx';
@@ -8,13 +8,9 @@ import ContactForm from '../components/ContactForm.tsx';
 
 const Contact = () => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
-    const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
     useEffect(() => {
         if (searchParams.has('formSubmitted')) {
-            setFormSubmitted(true);
-
             const newSearchParams = new URLSearchParams(searchParams);
             newSearchParams.delete('formSubmitted');
             setSearchParams(newSearchParams);
@@ -30,7 +26,7 @@ const Contact = () => {
                         <img
                             alt={'partybus'}
                             className={'rounded-xl hidden sm:block drop-shadow'}
-                            src={'./img/partybus/12.jpeg'}
+                            src={'./img/partybus/1.jpeg'}
                         />
                         <a className={'transition-all hover:text-primary w-max'} href={'tel:+32470824801'}>
                             <ListItem icon={<i className="fa-solid fa-phone"></i>} title={'Telefoonnummer'}>

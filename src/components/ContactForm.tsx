@@ -71,6 +71,9 @@ const ContactForm = () => {
             {/*)}*/}
             {subject === 'Partybus' && (
                 <>
+                    <InputField disabled={state.submitting} name={'GSM nummer contactpersoon'} required type={'tel'}>
+                        GSM-nummer
+                    </InputField>
                     <InputField
                         disabled={state.submitting}
                         name={'Datum jaar-maand-dag'}

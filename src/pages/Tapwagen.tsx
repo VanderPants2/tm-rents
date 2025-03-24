@@ -32,7 +32,7 @@ const Tapwagen = () => {
                 <Link state={{subject: 'Tapwagen'}} to={'/contact'}>
                     <div
                         className={
-                            'px-6 py-3 mt-8 bg-primary text-white rounded-xl font-semibold border border-primary drop-shadow transition-all hover:text-primary hover:bg-background w-max select-none'
+                            'px-6 py-3 mt-8 bg-primary text-white rounded-xl font-semibold border-2 border-primary drop-shadow transition-all hover:text-primary hover:bg-background w-max select-none'
                         }
                     >
                         Neem contact op
@@ -41,11 +41,11 @@ const Tapwagen = () => {
             </ImageContentBlock>
             <ImageList
                 imageList={[
-                    {path: './img/tapwagen/2.jpeg', alt: ''},
+                    {path: './img/tapwagen/6.jpeg', alt: ''},
                     {path: './img/tapwagen/3.jpeg', alt: ''},
                     {path: './img/tapwagen/4.jpeg', alt: ''},
                     {path: './img/tapwagen/5.jpeg', alt: ''},
-                    {path: './img/tapwagen/6.jpeg', alt: ''},
+                    {path: './img/tapwagen/2.jpeg', alt: ''},
                 ]}
             />
             <Footer />
