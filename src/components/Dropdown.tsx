@@ -10,9 +10,6 @@ const Dropdown = ({children, description, isMulti, name, onChange, options, requ
     const values = Array.isArray(value) ? value : [value];
     const selectedOptions = options ? options.filter((option: any) => values.includes(option.value)) : [];
 
-    let classNameInput =
-        'disabled:opacity-70 border-2 rounded-md border-primary/40 hover:border-primary/70 focus:outline-none focus:border-primary placeholder:italic placeholder:text-slate-400 w-full py-3 px-4';
-
     return (
         <div className={'flex flex-col gap-0.5 font-roboto mb-4'}>
             <label className={'ml-1 font-medium'} htmlFor={name}>
@@ -58,6 +55,7 @@ const Dropdown = ({children, description, isMulti, name, onChange, options, requ
                 required={required}
                 unstyled
                 value={selectedOptions}
+                isSearchable={false}
                 {...restProps}
             />
             <div className={'ml-1 text-gray-800'}>{description}</div>
