@@ -10,7 +10,7 @@ const PartyBus = () => {
     return (
         <div className={'flex flex-col gap-8'}>
             <Header />
-            <ImageContentBlock imageAlt={'partybus'} imagePath={'./img/partybus/1.jpeg'} title={'Partybus'}>
+            <ImageContentBlock imageAlt={'partybus'} imagePath={'./img/partybus/13.jpeg'} title={'Partybus'}>
                 <p>
                     Maak van je vervoersopties een feest op zich! Onze partybus is ideaal voor verjaardagen, vrijgezellenfeesten
                     of een dagje uit met vrienden.
@@ -43,14 +43,14 @@ const PartyBus = () => {
             />
             <ImageList
                 imageList={[
-                    {path: './img/partybus/1.jpeg', alt: ''},
-                    {path: './img/partybus/2.jpeg', alt: ''},
-                    {path: './img/partybus/3.jpeg', alt: ''},
-                    {path: './img/partybus/4.jpeg', alt: ''},
-                    {path: './img/partybus/5.jpeg', alt: ''},
-                    {path: './img/partybus/6.jpeg', alt: ''},
-                    {path: './img/partybus/7.jpeg', alt: ''},
-                    {path: './img/partybus/8.jpeg', alt: ''},
+                    {path: './img/partybus/13.jpeg', alt: ''},
+                    {path: './img/partybus/14.jpeg', alt: ''},
+                    {path: './img/partybus/15.jpeg', alt: ''},
+                    {path: './img/partybus/16.jpeg', alt: ''},
+                    {path: './img/partybus/17.jpeg', alt: ''},
+                    {path: './img/partybus/18.jpeg', alt: ''},
+                    {path: './img/partybus/19.jpeg', alt: ''},
+                    {path: './img/partybus/20.jpeg', alt: ''},
                 ]}
             />
             <VideoBlock videoList={['./video/promo_video_partybus.mp4', './video/video_carnaval_partybus.mp4']} />
