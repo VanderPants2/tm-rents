@@ -53,7 +53,12 @@ const PartyBus = () => {
                     {path: './img/partybus/20.jpeg', alt: ''},
                 ]}
             />
-            <VideoBlock videoList={['./video/promo_video_partybus.mp4', './video/video_carnaval_partybus.mp4']} />
+            <VideoBlock
+                videoList={[
+                    {path: './video/promo_video_partybus.mp4', poster: './img/video-poster/promo_video_partybus.jpg'},
+                    {path: './video/video_carnaval_partybus.mp4', poster: './img/video-poster/video_carnaval_partybus.jpg'},
+                ]}
+            />
             <Footer />
         </div>
     );
