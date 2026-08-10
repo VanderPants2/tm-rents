@@ -1,9 +1,9 @@
-import React, {ReactElement} from 'react';
+import {ReactNode} from 'react';
 import {NavLink} from 'react-router-dom';
 
 type Props = {
     linkTo: string;
-    children: ReactElement;
+    children: ReactNode;
 };
 
 const NavItem = ({children, linkTo}: Props) => {

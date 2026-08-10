@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import {useForm} from '@formspree/react';
 import InputField from './InputField.tsx';
 import TextArea from './TextArea.tsx';
@@ -13,8 +13,8 @@ const ContactForm = () => {
 
     useEffect(() => {
         if (state.succeeded) {
-            const form: HTMLFormElement = document.querySelector('#contactForm');
-            form.reset();
+            const form = document.querySelector<HTMLFormElement>('#contactForm');
+            form?.reset();
         }
     }, [state.succeeded]);
 

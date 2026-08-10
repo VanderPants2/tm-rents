@@ -1,7 +1,3 @@
-import {Link} from 'react-router-dom';
-import NavItem from './NavItem.tsx';
-import React from 'react';
-
 const Footer = () => {
     return (
         <footer className={'bg-black p-8 text-white'}>

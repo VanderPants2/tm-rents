@@ -1,5 +1,4 @@
-import React, {ReactNode} from 'react';
-import ListItem from './ListItem.tsx';
+import {ReactNode} from 'react';
 
 type Props = {
     title: string;

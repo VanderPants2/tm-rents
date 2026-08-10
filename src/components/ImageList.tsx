@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import {useCallback, useState} from 'react';
 import ImageViewer from 'react-simple-image-viewer';
 
 type Props = {
@@ -9,7 +9,7 @@ const ImageList = ({imageList}: Props) => {
     const [currentImage, setCurrentImage] = useState(0);
     const [isViewerOpen, setIsViewerOpen] = useState(false);
 
-    const openImageViewer = useCallback((index) => {
+    const openImageViewer = useCallback((index: number) => {
         setCurrentImage(index);
         setIsViewerOpen(true);
     }, []);
@@ -28,7 +28,7 @@ const ImageList = ({imageList}: Props) => {
                         <div key={image.path}>
                             <img
                                 alt={image.alt}
-                                className={'aspect-square object-cover rounded-xl drop-shadow'}
+                                className={'aspect-square object-cover rounded-xl drop-shadow-sm'}
                                 onClick={() => openImageViewer(index)}
                                 src={image.path}
                             />

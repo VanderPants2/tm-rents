@@ -1,6 +1,5 @@
 import {Link} from 'react-router-dom';
 import NavItem from './NavItem.tsx';
-import React from 'react';
 import Hamburger from './Hamburger.tsx';
 
 const Header = () => {

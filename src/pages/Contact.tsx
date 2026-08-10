@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import Header from '../components/Header.tsx';
 import Footer from '../components/Footer.tsx';
 import SplitBlock from '../components/SplitBlock.tsx';
@@ -25,7 +25,7 @@ const Contact = () => {
                     <div className={'flex flex-col gap-4'}>
                         <img
                             alt={'partybus'}
-                            className={'rounded-xl hidden sm:block drop-shadow'}
+                            className={'rounded-xl hidden sm:block drop-shadow-sm'}
                             src={'./img/partybus/13.jpeg'}
                         />
                         <a className={'transition-all hover:text-primary w-max'} href={'tel:+32470824801'}>

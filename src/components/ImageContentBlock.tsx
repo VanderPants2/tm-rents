@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react';
+import {ReactNode} from 'react';
 
 type Props = {
     imagePath: string;
@@ -17,7 +17,7 @@ const ImageContentBlock = ({children, imageAlt, imagePath, reverse, title}: Prop
                     <div>{children}</div>
                 </div>
                 <div className={'basis-1/3 -z-10'}>
-                    <img alt={imageAlt} className={'rounded-xl drop-shadow'} src={imagePath} />
+                    <img alt={imageAlt} className={'rounded-xl drop-shadow-sm'} src={imagePath} />
                 </div>
             </div>
         </div>

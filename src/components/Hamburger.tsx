@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import NavItem from './NavItem.tsx';
-import {AnimatePresence, motion} from 'framer-motion';
+import {AnimatePresence, motion} from 'motion/react';
 
 const Hamburger = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);

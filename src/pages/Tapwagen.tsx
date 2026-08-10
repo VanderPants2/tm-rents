@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from '../components/Header.tsx';
 import Footer from '../components/Footer.tsx';
 import ImageList from '../components/ImageList.tsx';
@@ -32,7 +31,7 @@ const Tapwagen = () => {
                 <Link state={{subject: 'Tapwagen'}} to={'/contact'}>
                     <div
                         className={
-                            'px-6 py-3 mt-8 bg-primary text-white rounded-xl font-semibold border-2 border-primary drop-shadow transition-all hover:text-primary hover:bg-background w-max select-none'
+                            'px-6 py-3 mt-8 bg-primary text-white rounded-xl font-semibold border-2 border-primary drop-shadow-sm transition-all hover:text-primary hover:bg-background w-max select-none'
                         }
                     >
                         Neem contact op

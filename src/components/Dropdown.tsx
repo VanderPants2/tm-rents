@@ -30,6 +30,7 @@ const Dropdown = ({children, description, isMulti, name, onChange, options, requ
                 closeMenuOnSelect={!isMulti}
                 hideSelectedOptions={false}
                 isMulti={isMulti}
+                isSearchable={false}
                 menuPortalTarget={document.body}
                 name={name}
                 onChange={(items) => {
@@ -55,7 +56,6 @@ const Dropdown = ({children, description, isMulti, name, onChange, options, requ
                 required={required}
                 unstyled
                 value={selectedOptions}
-                isSearchable={false}
                 {...restProps}
             />
             <div className={'ml-1 text-gray-800'}>{description}</div>

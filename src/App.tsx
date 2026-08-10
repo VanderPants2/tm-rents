@@ -2,7 +2,6 @@ import Header from './components/Header.tsx';
 import Footer from './components/Footer.tsx';
 import ListBlock from './components/ListBlock.tsx';
 import ListItem from './components/ListItem.tsx';
-import React from 'react';
 import ImageContentBlock from './components/ImageContentBlock.tsx';
 
 const App = () => {

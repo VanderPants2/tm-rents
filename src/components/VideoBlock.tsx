@@ -1,5 +1,3 @@
-import React from 'react';
-
 type Props = {
     videoList: {path: string; poster?: string}[];
 };
