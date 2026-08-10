@@ -1,37 +1,52 @@
-import Header from '../components/Header.tsx';
-import ImageContentBlock from '../components/ImageContentBlock.tsx';
-import Footer from '../components/Footer.tsx';
+import Seo from '../components/layout/Seo.tsx';
+import BulletList from '../components/ui/BulletList.tsx';
+import Button from '../components/ui/Button.tsx';
+import CtaBand from '../components/sections/CtaBand.tsx';
+import PageHeader from '../components/sections/PageHeader.tsx';
+import Prose from '../components/ui/Prose.tsx';
+import SplitFeature from '../components/sections/SplitFeature.tsx';
+import {getService} from '../content/services.ts';
+import {springkastelen} from '../content/galleries.ts';
+import {serviceStyle} from '../utils/utils.ts';
 
-const Springkastelen = () => {
-    return (
-        <div className={'flex flex-col gap-8'}>
-            <Header />
-            <ImageContentBlock imageAlt={'diddl springkasteel'} imagePath={'./img/springkastelen/diddl.jpeg'} title={'Diddl'}>
-                <p>
-                    Maak elk feest onvergetelijk met dit kleurrijke Diddl springkasteel, compleet met een glijbaan aan de
-                    rechterkant voor extra speelplezier!
-                </p>
-            </ImageContentBlock>
-            <ImageContentBlock
-                imageAlt={'frozen springkasteel'}
-                imagePath={'./img/springkastelen/frozen.jpeg'}
-                reverse
-                title={'Frozen'}
+const service = getService('springkastelen')!;
+
+const Springkastelen = () => (
+    <div style={serviceStyle(service.hue)}>
+        <Seo description={service.intro} image={service.image?.src} path={'/springkastelen'} title={'Springkastelen huren'} />
+
+        <PageHeader eyebrow={service.kicker} image={service.image} intro={service.intro} title={'Springkastelen'} />
+
+        {springkastelen.map((castle, index) => (
+            <SplitFeature
+                eyebrow={`Kasteel ${index + 1} van ${springkastelen.length}`}
+                image={castle}
+                key={castle.name}
+                reverse={index % 2 === 1}
+                title={castle.name}
+                tone={index % 2 === 1 ? 'op' : 'nacht'}
             >
+                <Prose>
+                    <p>{castle.body}</p>
+                </Prose>
+            </SplitFeature>
+        ))}
+
+        <SplitFeature eyebrow={'Goed om te weten'} image={springkastelen[0]} reverse title={'Wat je nodig hebt'} tone={'op'}>
+            <BulletList items={service.bullets} />
+            <Prose>
                 <p>
-                    Laat de kinderen zich uitleven in de wereld van Frozen met dit prachtige opblaasbare speelparadijs. Dit
-                    springkasteel heeft een klim en glijbaan gedeelte.
+                    Een vlak stuk grond en een stopcontact in de buurt volstaan. Is er ter plaatse geen stroom, dan huur je er
+                    gewoon een generator bij.
                 </p>
-            </ImageContentBlock>
-            <ImageContentBlock imageAlt={'bungee springkasteel'} imagePath={'./img/springkastelen/bungee.jpeg'} title={'Bungee'}>
-                <p>
-                    Spring en slinger op onze kleurrijke sombrero! Dit unieke springkasteel in de vorm van een sombrero is een
-                    echte blikvanger op elk feestje. Perfect voor kinderen die van een uitdaging houden!
-                </p>
-            </ImageContentBlock>
-            <Footer />
-        </div>
-    );
-};
+            </Prose>
+            <Button state={{subject: service.formSubject}} to={'/contact'}>
+                Vraag je datum aan
+            </Button>
+        </SplitFeature>
+
+        <CtaBand subject={service.formSubject} title={'Welk kasteel wordt het?'} />
+    </div>
+);
 
 export default Springkastelen;

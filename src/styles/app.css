@@ -1,11 +1,173 @@
 @import 'tailwindcss';
 
 @theme {
-    --font-roboto: 'Roboto';
+    /* ── Typefaces ──────────────────────────────────────────────
+       display: fairground-poster headlines, used uppercase and wide
+       body:    everything you actually read
+       mono:    data on a ticket — phone, dates, times, labels        */
+    --font-display: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'Space Mono', ui-monospace, monospace;
 
-    --color-black: #030b09;
-    --color-background: #f8fdfb;
-    --color-primary: #00aa80;
-    --color-secondary: #99d8c8;
-    --color-accent: #aa0080;
+    /* ── Ground ─────────────────────────────────────────────────
+       Cold ink, so warm bulbs and warm photos read warm against it. */
+    --color-nacht: #0b0f14;
+    --color-nacht-op: #141a22;
+    --color-krijt: #f2efe8;
+    --color-krijt-dim: #9aa3ae;
+    --color-rand: rgb(242 239 232 / 0.12);
+
+    /* ── Signature ──────────────────────────────────────────────
+       Bulb amber. Reserved for the lichtslinger, focus rings and the
+       primary CTA, so it never competes with a service hue.         */
+    --color-lamp: #ffc24d;
+
+    /* ── One hue per service ────────────────────────────────────
+       Only one of these is live on any given page.                  */
+    --color-magenta: #e0159b; /* partybus       — the logo's #AA0080, lifted to survive on ink */
+    --color-zon: #ffd23f; /* springkastelen — the bus's own yellow */
+    --color-teal: #00aa80; /* baravan        — unchanged brand teal */
+    --color-signaal: #3d8bff; /* generators */
+
+    --radius-blok: 14px;
+
+    --container-smal: 720px;
+    --container-inhoud: 1120px;
+    --container-breed: 1400px;
+
+    --text-xs: 0.75rem;
+    --text-xs--line-height: 1.5;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: 1.55;
+    --text-base: 1rem;
+    --text-base--line-height: 1.65;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: 1.6;
+    --text-xl: 1.375rem;
+    --text-xl--line-height: 1.45;
+    --text-2xl: 1.75rem;
+    --text-2xl--line-height: 1.25;
+    --text-3xl: clamp(2rem, 1.6rem + 1.8vw, 2.75rem);
+    --text-3xl--line-height: 1.05;
+    --text-4xl: clamp(2.5rem, 1.9rem + 3vw, 4rem);
+    --text-4xl--line-height: 0.98;
+    --text-5xl: clamp(3rem, 1.7rem + 5.6vw, 5.5rem);
+    --text-5xl--line-height: 0.92;
+}
+
+@layer base {
+    :root {
+        /* The live service hue. Pages override this on their root element;
+           everything downstream reads it, so nothing prop-drills a colour. */
+        --service: var(--color-lamp);
+    }
+
+    html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        background-color: var(--color-nacht);
+        color: var(--color-krijt);
+        font-family: var(--font-body);
+        font-optical-sizing: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--color-lamp);
+        outline-offset: 3px;
+        border-radius: 2px;
+    }
+
+    ::selection {
+        background-color: var(--service);
+        color: var(--color-nacht);
+    }
+
+    [id] {
+        scroll-margin-top: 6rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+}
+
+/* ── The identity device ────────────────────────────────────────
+   Lifted straight from the logo: white TM with a hard magenta offset
+   behind it. In em, so it scales with whatever size it's set at.    */
+@utility offset-schaduw {
+    text-shadow: 0.055em 0.055em 0 var(--service);
+}
+
+@utility display-kop {
+    font-family: var(--font-display);
+    font-variation-settings: 'wdth' 86;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+/* A single bulb on the lichtslinger. Colour comes from `currentColor`, so
+   setting the text colour lights the glass, the glow and the halo at once. */
+@utility lamp {
+    background-color: currentColor;
+    box-shadow:
+        0 0 8px 1px currentColor,
+        0 0 22px 3px color-mix(in oklab, currentColor 40%, transparent);
+    animation:
+        lamp-aan 600ms ease-out backwards,
+        lamp-flikker 7s ease-in-out infinite;
+}
+
+/* ── The signature: de lichtslinger ─────────────────────────────
+   Bulbs warm on left to right, then settle into a slow flicker at
+   staggered periods. Both are index-driven off --i, so there is no
+   per-frame JavaScript. Reduced motion is handled in the base layer,
+   which collapses the durations and leaves every bulb lit.          */
+@keyframes lamp-aan {
+    0% {
+        opacity: 0;
+        filter: brightness(0.4);
+    }
+    70% {
+        opacity: 1;
+        filter: brightness(1.35);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+@keyframes lamp-flikker {
+    0%,
+    38%,
+    100% {
+        opacity: 1;
+    }
+    44% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1;
+    }
+    72% {
+        opacity: 0.84;
+    }
+    78% {
+        opacity: 1;
+    }
 }
