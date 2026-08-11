@@ -55,7 +55,7 @@ const Header = () => {
 
                         <a
                             aria-label={`Bel ${site.phone.display}`}
-                            className={'grid h-10 w-10 place-items-center rounded-full bg-lamp text-nacht sm:hidden'}
+                            className={'grid h-10 w-10 place-items-center rounded-full bg-teal text-nacht sm:hidden'}
                             href={site.phone.href}
                         >
                             <i aria-hidden className={'fa-solid fa-phone'} />

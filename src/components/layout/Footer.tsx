@@ -31,7 +31,7 @@ const Footer = () => (
 
                 <div className={'flex flex-col gap-3'}>
                     <h2 className={'font-mono text-xs uppercase tracking-[0.2em] text-krijt'}>Contact</h2>
-                    <a className={'font-mono text-sm text-krijt transition-colors hover:text-lamp'} href={site.phone.href}>
+                    <a className={'font-mono text-sm text-krijt transition-colors hover:text-teal'} href={site.phone.href}>
                         {site.phone.display}
                     </a>
                     <a className={'text-sm text-krijt-dim transition-colors hover:text-krijt'} href={`mailto:${site.email}`}>

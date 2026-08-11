@@ -17,23 +17,34 @@
     --color-krijt-dim: #9aa3ae;
     --color-rand: rgb(242 239 232 / 0.12);
 
-    /* ── Signature ──────────────────────────────────────────────
-       Warm bulb vermilion. Reserved for the lichtslinger, focus rings,
-       the primary CTA and the heading offset, so it never competes
-       with a service hue.
+    /* ── Actie ──────────────────────────────────────────────────
+       The colour of "do something": every primary CTA, the skip link,
+       and the homepage's default service hue (so the lichtslinger and
+       the section eyebrows read teal on the front door). Doubles as the
+       Baravan's own hue, which is why those pages feel of a piece.
 
-       Deliberately mid-tone rather than pale: it has to work both ON the
-       ink ground (6.16:1, passes AA at small sizes) and BEHIND krijt-
-       coloured display type as an offset (2.72:1, so the edge reads as
-       an edge). The old #ffc24d was 11.97:1 on ink but only 1.40:1
-       behind the type, which is why headlines looked blurred.          */
-    --color-lamp: #ff5a1f;
+       The original brand teal, unchanged — it is the logo's ground.
+       6.46:1 on ink both ways, so ink-on-teal button labels pass AA.  */
+    --color-teal: #00aa80;
+
+    /* ── Signaal ────────────────────────────────────────────────
+       The heading offset and the focus ring. Deliberately NOT the CTA
+       colour: a ring in teal would vanish into the teal button it is
+       ringing. This one sits on the ink ground at outline-offset 3px,
+       where it scores 6.16:1 — the gap is doing the work, since
+       vermilion directly against teal is only 1.05:1.
+
+       Mid-tone on purpose. It has to work both ON the ink ground
+       (6.16:1, passes AA at small sizes) and BEHIND krijt display type
+       as an offset (2.72:1, so the edge reads as an edge). The old
+       #ffc24d was 11.97:1 on ink but only 1.40:1 behind the type, which
+       is why headlines looked blurred.                                */
+    --color-vermiljoen: #ff5a1f;
 
     /* ── One hue per service ────────────────────────────────────
-       Only one of these is live on any given page.                  */
-    --color-magenta: #e0159b; /* partybus       — the logo's #AA0080, lifted to survive on ink */
-    --color-zon: #ffd23f; /* springkastelen — the bus's own yellow */
-    --color-teal: #00aa80; /* baravan        — unchanged brand teal */
+       Only one of these is live on any given page. Springkastelen and
+       the Baravan borrow the two above rather than owning a hue.      */
+    --color-magenta: #e0159b; /* partybus   — the logo's #AA0080, lifted to survive on ink */
     --color-signaal: #3d8bff; /* generators */
 
     --radius-blok: 14px;
@@ -65,8 +76,10 @@
 @layer base {
     :root {
         /* The live service hue. Pages override this on their root element;
-           everything downstream reads it, so nothing prop-drills a colour. */
-        --service: var(--color-lamp);
+           everything downstream reads it, so nothing prop-drills a colour.
+           Teal is the homepage default — the brand's own colour on the
+           brand's own page. */
+        --service: var(--color-teal);
     }
 
     html {
@@ -83,7 +96,10 @@
     }
 
     :focus-visible {
-        outline: 2px solid var(--color-lamp);
+        /* Vermilion rather than the CTA teal, and the 3px offset is load
+           bearing: it keeps the ring on the ink ground instead of on the
+           button fill it surrounds. */
+        outline: 2px solid var(--color-vermiljoen);
         outline-offset: 3px;
         border-radius: 2px;
     }
@@ -120,8 +136,8 @@
        live hue, a page could silently break it — the offset dropped to
        1.26:1 behind krijt type on the yellow springkastelen pages. The
        service hues still colour the eyebrows, bullets, bulbs and nav
-       underline, where every one of them scores 8:1+ on ink. */
-    text-shadow: 0.055em 0.055em 0 var(--color-lamp);
+       underline, where every one of them is legible on ink. */
+    text-shadow: 0.055em 0.055em 0 var(--color-vermiljoen);
 }
 
 @utility display-kop {

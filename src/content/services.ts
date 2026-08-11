@@ -36,7 +36,7 @@ export const services: Service[] = [
     {
         slug: 'springkastelen',
         name: 'Springkastelen',
-        hue: 'var(--color-zon)',
+        hue: 'var(--color-vermiljoen)',
         icon: 'fa-solid fa-children',
         kicker: 'drie kastelen',
         short: 'Diddl, Frozen of de sombrero. Wij brengen ze, zetten ze op en halen ze weer op.',

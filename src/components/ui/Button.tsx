@@ -19,7 +19,7 @@ type Props = {
 };
 
 const variants = {
-    primary: 'bg-lamp text-nacht hover:bg-krijt',
+    primary: 'bg-teal text-nacht hover:bg-krijt',
     secondary: 'border border-krijt/30 text-krijt hover:border-krijt hover:bg-krijt/5',
     ghost: 'text-krijt-dim hover:text-krijt',
 };

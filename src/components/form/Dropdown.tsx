@@ -76,7 +76,7 @@ const Dropdown = ({
                        utility of equal specificity loses. */
                     control: (base, state) => ({
                         ...base,
-                        outline: state.isFocused ? '2px solid var(--color-lamp)' : undefined,
+                        outline: state.isFocused ? '2px solid var(--color-vermiljoen)' : undefined,
                         outlineOffset: '3px',
                     }),
                     menuPortal: (base) => ({...base, zIndex: 50}),
