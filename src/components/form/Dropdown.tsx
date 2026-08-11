@@ -66,7 +66,21 @@ const Dropdown = ({
                 options={options}
                 placeholder={placeholder}
                 required={required}
-                styles={{menuPortal: (base) => ({...base, zIndex: 50})}}
+                styles={{
+                    /* react-select puts keyboard focus on a 0x0 input inside the control,
+                       so the global :focus-visible outline had nothing visible to draw
+                       around — the field read as unfocused. The ring has to go on the
+                       control, and it has to go through `styles` rather than `classNames`:
+                       even in unstyled mode react-select emits an emotion class that sets
+                       `outline: 0`, and emotion injects after the Tailwind sheet, so a
+                       utility of equal specificity loses. */
+                    control: (base, state) => ({
+                        ...base,
+                        outline: state.isFocused ? '2px solid var(--color-lamp)' : undefined,
+                        outlineOffset: '3px',
+                    }),
+                    menuPortal: (base) => ({...base, zIndex: 50}),
+                }}
                 unstyled
                 value={options.find((option) => option.value === value) ?? null}
             />

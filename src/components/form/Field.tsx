@@ -25,9 +25,11 @@ const Field = ({children, description, id, label, required = false}: Props) => (
     </div>
 );
 
+/* No `focus:` border here on purpose. The global `:focus-visible` outline in
+   app.css is the single focus indicator; adding a border colour change on top
+   drew two concentric rings around every focused field. */
 export const controlClasses =
     'w-full rounded-blok border border-rand bg-nacht px-4 py-3 text-krijt [color-scheme:dark] ' +
-    'transition-colors placeholder:text-krijt-dim/60 hover:border-krijt/30 focus:border-(--service) ' +
-    'disabled:opacity-60';
+    'transition-colors placeholder:text-krijt-dim/60 hover:border-krijt/30 disabled:opacity-60';
 
 export default Field;

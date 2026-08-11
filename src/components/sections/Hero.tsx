@@ -19,7 +19,7 @@ const Hero = () => (
     <div className={'relative isolate overflow-hidden border-b border-rand'}>
         <div className={'absolute inset-0 -z-10'}>
             <Media image={image} priority sizes={'100vw'} />
-            <div className={'absolute inset-0 bg-nacht/72'} />
+            <div className={'absolute inset-0 bg-nacht/80'} />
             <div className={'absolute inset-0 bg-gradient-to-b from-nacht/60 via-transparent to-nacht'} />
         </div>
 

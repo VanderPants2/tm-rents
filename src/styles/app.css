@@ -18,9 +18,16 @@
     --color-rand: rgb(242 239 232 / 0.12);
 
     /* ── Signature ──────────────────────────────────────────────
-       Bulb amber. Reserved for the lichtslinger, focus rings and the
-       primary CTA, so it never competes with a service hue.         */
-    --color-lamp: #ffc24d;
+       Warm bulb vermilion. Reserved for the lichtslinger, focus rings,
+       the primary CTA and the heading offset, so it never competes
+       with a service hue.
+
+       Deliberately mid-tone rather than pale: it has to work both ON the
+       ink ground (6.16:1, passes AA at small sizes) and BEHIND krijt-
+       coloured display type as an offset (2.72:1, so the edge reads as
+       an edge). The old #ffc24d was 11.97:1 on ink but only 1.40:1
+       behind the type, which is why headlines looked blurred.          */
+    --color-lamp: #ff5a1f;
 
     /* ── One hue per service ────────────────────────────────────
        Only one of these is live on any given page.                  */
@@ -109,7 +116,12 @@
    Lifted straight from the logo: white TM with a hard magenta offset
    behind it. In em, so it scales with whatever size it's set at.    */
 @utility offset-schaduw {
-    text-shadow: 0.055em 0.055em 0 var(--service);
+    /* Pinned to the accent rather than `--service`. When this followed the
+       live hue, a page could silently break it — the offset dropped to
+       1.26:1 behind krijt type on the yellow springkastelen pages. The
+       service hues still colour the eyebrows, bullets, bulbs and nav
+       underline, where every one of them scores 8:1+ on ink. */
+    text-shadow: 0.055em 0.055em 0 var(--color-lamp);
 }
 
 @utility display-kop {
