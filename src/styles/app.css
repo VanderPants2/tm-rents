@@ -132,12 +132,17 @@
    Lifted straight from the logo: white TM with a hard magenta offset
    behind it. In em, so it scales with whatever size it's set at.    */
 @utility offset-schaduw {
-    /* Pinned to the accent rather than `--service`. When this followed the
-       live hue, a page could silently break it — the offset dropped to
-       1.26:1 behind krijt type on the yellow springkastelen pages. The
-       service hues still colour the eyebrows, bullets, bulbs and nav
-       underline, where every one of them is legible on ink. */
-    text-shadow: 0.055em 0.055em 0 var(--color-vermiljoen);
+    /* Follows the live hue, so every page's titles carry its own colour:
+       teal on the homepage, magenta on partybus, vermiljoen on
+       springkastelen, teal on the Baravan.
+
+       This was briefly pinned to one fixed colour, but only because the
+       old yellow and amber sat at 1.26:1 and 1.40:1 behind krijt display
+       type — close enough in lightness that the offset read as a halo
+       rather than an edge. Both are gone, and every remaining hue clears
+       it: teal 2.59, vermiljoen 2.72, signaal 2.89, magenta 3.85. Keep
+       that floor in mind before adding a fifth. */
+    text-shadow: 0.055em 0.055em 0 var(--service);
 }
 
 @utility display-kop {
