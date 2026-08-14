@@ -66,7 +66,6 @@ const Lightbox = ({images, index, onClose, onIndexChange}: Props) => {
                     width={current.width}
                 />
 
-                <p className={'max-w-[60ch] text-center text-sm text-krijt-dim'}>{current.alt}</p>
 
                 <div className={'flex items-center gap-3 font-mono text-xs text-krijt-dim'}>
                     <button
