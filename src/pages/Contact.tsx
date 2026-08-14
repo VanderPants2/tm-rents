@@ -76,12 +76,6 @@ const Contact = () => {
                                     </div>
                                 ))}
                             </dl>
-
-                            <p className={'rounded-blok border border-rand bg-nacht-op p-5 text-sm text-krijt-dim'}>
-                                Kies je <strong className={'text-krijt'}>Partybus</strong> als onderwerp, dan vraagt het formulier
-                                meteen naar je start- en einduur en je programma. Zo hoeft Tibo niet terug te mailen voor de
-                                details.
-                            </p>
                         </aside>
                     </div>
                 </Container>

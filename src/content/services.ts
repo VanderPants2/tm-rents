@@ -103,8 +103,6 @@ export const services: Service[] = [
         formSubject: 'Generators',
         to: '/contact',
         hasPage: false,
-        // TODO(tibo): geen foto van de generators in het archief — stuur er een
-        // door en de kaart toont hem in plaats van het icoon.
     },
 ];
 

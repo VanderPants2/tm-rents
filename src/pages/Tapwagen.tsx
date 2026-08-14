@@ -18,7 +18,7 @@ const Tapwagen = () => (
 
         <PageHeader eyebrow={service.kicker} image={service.image} intro={service.intro} title={'De Baravan'} />
 
-        <SplitFeature eyebrow={'Waarom de Baravan'} image={baravanFotos[3]} title={'Een bar die meteen opvalt'}>
+        <SplitFeature eyebrow={'Waarom de Baravan'} image={service.image ?? baravanFotos[1]} title={'Een bar die meteen opvalt'}>
             <BulletList items={service.bullets} />
             <Prose>
                 <p>
