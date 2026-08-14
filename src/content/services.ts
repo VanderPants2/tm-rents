@@ -3,7 +3,7 @@ import {Service} from './types.ts';
 /**
  * The single source of truth for what TM Events rents out.
  * Feeds the nav, the homepage cards, the service pages and the contact
- * form's subject dropdown — those four lists used to drift apart.
+ * form's subject dropdown - those four lists used to drift apart.
  */
 export const services: Service[] = [
     {

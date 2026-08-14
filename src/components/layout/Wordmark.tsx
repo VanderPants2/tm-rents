@@ -19,7 +19,7 @@ const sizes = {
  */
 const Wordmark = ({className, size = 'sm'}: Props) => (
     <Link
-        aria-label={`${site.name} — naar de homepagina`}
+        aria-label={`${site.name} - naar de homepagina`}
         className={cx('display-kop inline-flex items-baseline gap-1.5 leading-none', sizes[size], className)}
         to={'/'}
     >

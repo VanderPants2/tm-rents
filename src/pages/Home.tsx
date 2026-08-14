@@ -40,7 +40,7 @@ const structuredData = {
 
 const Home = () => (
     <>
-        <Seo description={description} image={'./img/partybus/20.jpeg'} path={'/'} title={`${site.name} — ${site.tagline}`} />
+        <Seo description={description} image={'./img/partybus/20.jpeg'} path={'/'} title={`${site.name} - ${site.tagline}`} />
         <script dangerouslySetInnerHTML={{__html: JSON.stringify(structuredData)}} type={'application/ld+json'} />
 
         <Hero />

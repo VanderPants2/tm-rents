@@ -34,7 +34,7 @@ const Hero = () => (
                 </h1>
 
                 <p className={'max-w-[52ch] text-lg text-krijt/85 text-pretty sm:text-xl'}>
-                    Partybus, springkastelen, de Baravan en stroom. Geleverd, geplaatst en weer opgehaald — zodat jij je met je
+                    Partybus, springkastelen, de Baravan en stroom. Geleverd, geplaatst en weer opgehaald - zodat jij je met je
                     gasten kunt bezighouden in plaats van met het materiaal.
                 </p>
 

@@ -11,7 +11,7 @@ type Props = {
     description?: string;
     isDisabled?: boolean;
     label: string;
-    /** Becomes the field name in the Formspree e-mail — don't rename lightly. */
+    /** Becomes the field name in the Formspree e-mail - don't rename lightly. */
     name: string;
     onChange: (value: string) => void;
     options: Option[];
@@ -69,7 +69,7 @@ const Dropdown = ({
                 styles={{
                     /* react-select puts keyboard focus on a 0x0 input inside the control,
                        so the global :focus-visible outline had nothing visible to draw
-                       around — the field read as unfocused. The ring has to go on the
+                       around - the field read as unfocused. The ring has to go on the
                        control, and it has to go through `styles` rather than `classNames`:
                        even in unstyled mode react-select emits an emotion class that sets
                        `outline: 0`, and emotion injects after the Tailwind sheet, so a

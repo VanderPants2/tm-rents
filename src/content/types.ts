@@ -24,7 +24,7 @@ export type Service = {
     to: string;
     /** Whether this service has a page of its own, or routes straight to contact. */
     hasPage: boolean;
-    /** Omitted when there is no honest photo of it yet — the card falls back
+    /** Omitted when there is no honest photo of it yet - the card falls back
      *  to an icon panel rather than borrowing a misleading picture. */
     image?: Img;
 };

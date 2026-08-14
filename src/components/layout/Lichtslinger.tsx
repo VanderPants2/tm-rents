@@ -10,7 +10,7 @@ const CABLE = 'M0 3 Q50 42 100 3';
 const sagAt = (t: number) => (1 - t) ** 2 * 3 + 2 * (1 - t) * t * 42 + t ** 2 * 3;
 
 /**
- * De lichtslinger — the one animated moment on the page.
+ * De lichtslinger - the one animated moment on the page.
  *
  * The Baravan has a string of warm bulbs along its roof, so this is the
  * brand's own object rather than a decoration. Bulbs warm on left to right

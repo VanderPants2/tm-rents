@@ -1,10 +1,10 @@
 /**
- * TODO(tibo) — twee antwoorden hieronder staan bewust vaag omdat alleen jij
+ * TODO(tibo) - twee antwoorden hieronder staan bewust vaag omdat alleen jij
  * de juiste info hebt. Laat ze weten en ze worden concreet gemaakt:
  *
- *   1. 'In welke regio komen jullie?'  — tot hoever leveren jullie, en vanaf
+ *   1. 'In welke regio komen jullie?'  - tot hoever leveren jullie, en vanaf
  *      welke afstand rekenen jullie transport aan?
- *   2. 'Wat als het slecht weer is?'   — kan een klant kosteloos annuleren of
+ *   2. 'Wat als het slecht weer is?'   - kan een klant kosteloos annuleren of
  *      verplaatsen, en tot wanneer?
  *
  * Ook goed om te bevestigen: klopt het dat jullie álles zelf leveren, plaatsen

@@ -3,7 +3,7 @@ import Container from '../ui/Container.tsx';
 import Section from '../ui/Section.tsx';
 import SectionHeading from '../ui/SectionHeading.tsx';
 
-/** Numbered because this genuinely is a sequence — the reader needs the order. */
+/** Numbered because this genuinely is a sequence - the reader needs the order. */
 const HowItWorks = () => (
     <Section id={'zo-werkt-het'} tone={'op'}>
         <Container width={'breed'}>

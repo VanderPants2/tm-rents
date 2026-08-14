@@ -4,7 +4,7 @@
     /* ── Typefaces ──────────────────────────────────────────────
        display: fairground-poster headlines, used uppercase and wide
        body:    everything you actually read
-       mono:    data on a ticket — phone, dates, times, labels        */
+       mono:    data on a ticket - phone, dates, times, labels        */
     --font-display: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
     --font-body: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
     --font-mono: 'Space Mono', ui-monospace, monospace;
@@ -23,7 +23,7 @@
        the section eyebrows read teal on the front door). Doubles as the
        Baravan's own hue, which is why those pages feel of a piece.
 
-       The original brand teal, unchanged — it is the logo's ground.
+       The original brand teal, unchanged - it is the logo's ground.
        6.46:1 on ink both ways, so ink-on-teal button labels pass AA.  */
     --color-teal: #00aa80;
 
@@ -31,7 +31,7 @@
        The heading offset and the focus ring. Deliberately NOT the CTA
        colour: a ring in teal would vanish into the teal button it is
        ringing. This one sits on the ink ground at outline-offset 3px,
-       where it scores 6.16:1 — the gap is doing the work, since
+       where it scores 6.16:1 - the gap is doing the work, since
        vermilion directly against teal is only 1.05:1.
 
        Mid-tone on purpose. It has to work both ON the ink ground
@@ -44,7 +44,7 @@
     /* ── One hue per service ────────────────────────────────────
        Only one of these is live on any given page. Springkastelen and
        the Baravan borrow the two above rather than owning a hue.      */
-    --color-magenta: #e0159b; /* partybus   — the logo's #AA0080, lifted to survive on ink */
+    --color-magenta: #e0159b; /* partybus   - the logo's #AA0080, lifted to survive on ink */
     --color-signaal: #3d8bff; /* generators */
 
     --radius-blok: 14px;
@@ -77,7 +77,7 @@
     :root {
         /* The live service hue. Pages override this on their root element;
            everything downstream reads it, so nothing prop-drills a colour.
-           Teal is the homepage default — the brand's own colour on the
+           Teal is the homepage default - the brand's own colour on the
            brand's own page. */
         --service: var(--color-teal);
     }
@@ -138,7 +138,7 @@
 
        This was briefly pinned to one fixed colour, but only because the
        old yellow and amber sat at 1.26:1 and 1.40:1 behind krijt display
-       type — close enough in lightness that the offset read as a halo
+       type - close enough in lightness that the offset read as a halo
        rather than an edge. Both are gone, and every remaining hue clears
        it: teal 2.59, vermiljoen 2.72, signaal 2.89, magenta 3.85. Keep
        that floor in mind before adding a fifth. */

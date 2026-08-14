@@ -33,7 +33,7 @@ const Contact = () => {
 
             <PageHeader
                 eyebrow={'Contact'}
-                intro={'Vertel kort wat je zoekt en voor wanneer. Bellen mag natuurlijk ook — dat gaat het snelst.'}
+                intro={'Vertel kort wat je zoekt en voor wanneer. Bellen mag natuurlijk ook - dat gaat het snelst.'}
                 title={'Vraag je datum aan'}
             />
 

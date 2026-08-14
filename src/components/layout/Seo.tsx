@@ -40,7 +40,7 @@ const setCanonical = (href: string) => {
 const Seo = ({description, image, path, title}: Props) => {
     useEffect(() => {
         const url = `${site.domain}${path}`;
-        const fullTitle = path === '/' ? title : `${title} — ${site.name}`;
+        const fullTitle = path === '/' ? title : `${title} - ${site.name}`;
 
         document.title = fullTitle;
         setMeta('name', 'title', fullTitle);

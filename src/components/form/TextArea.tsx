@@ -5,7 +5,7 @@ type Props = {
     description?: string;
     disabled?: boolean;
     label: string;
-    /** Becomes the field name in the Formspree e-mail — don't rename lightly. */
+    /** Becomes the field name in the Formspree e-mail - don't rename lightly. */
     name: string;
     placeholder?: string;
     required?: boolean;

@@ -6,7 +6,7 @@ type Props = {
     children: ReactNode;
     className?: string;
     disabled?: boolean;
-    /** Renders an `<a>` — use for tel:, mailto: and external links. */
+    /** Renders an `<a>` - use for tel:, mailto: and external links. */
     href?: string;
     icon?: string;
     size?: 'md' | 'lg';
